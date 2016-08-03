@@ -3,14 +3,14 @@ BITEC SW융합인력양성과정 Project_Saving Banana Project
 
 Project Name: O.Ba (오래먹자바나나 & Observe Banana)
 
-프로젝트 개요:  많은 사람들이 즐겨 먹는 바나나가 현재 멸종위기에 처했음을 알리고, 
+프로젝트 개요:  많은 사람들이 즐겨 먹는 바나나가 현재 멸종위기에 처했음을 알리고, <b>
 		바나나를 살리기 위한 해외 연구 프로젝트에 기부하는 웹 프로그램을 개발하고자 함.
 
-프로젝트 목적: 1) 멸정 위기에 처한 바나나 살리는 연구에 기부 - 기부 프로그램
+프로젝트 목적: 1) 멸정 위기에 처한 바나나 살리는 연구에 기부 - 기부 프로그램<b>
 	             2) 사람들에게 바나나의 멸종 위기 및 바나나를 통해 생물 멸종 위기에 대한 관심 유발 - 데이터분석&시각화
 
-자료 수집/분석: 
-                http://banana-genome-hub.southgreen.fr/documentation
+자료 수집/분석: <b>
+                http://banana-genome-hub.southgreen.fr/documentation<b>
                 http://www.fao.org/economic/ess/ess-capacity/ess-strategy/en/#.V5CKcEaLSUk (banana genetic data)
 
 스터디 계획: 8/4~8/10 데이터 가공 및 분석 (유전자 데이터 분석)
