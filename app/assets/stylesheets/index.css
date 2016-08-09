@@ -1,0 +1,26 @@
+/* index.css */
+
+.jombotron{
+	margin-top: 50px;
+}
+
+.container {
+	margin-top: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+#project_logo {
+	display: block;
+	margin: auto;
+}
+
+#profile-image {
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+
+.row {
+	margin-top:10px
+}
