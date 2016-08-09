@@ -4277,7 +4277,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
+ 	padding: 1px 15px;
   font-size: 18px;
   line-height: 20px;
   height: 50px;
@@ -4962,7 +4962,7 @@ a.badge:focus {
 .jumbotron {
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
   color: inherit;
   background-color: #eeeeee;
 }
@@ -6846,15 +6846,15 @@ button.close {
   border: 1px solid #e16707;
 }
 .btn-primary:hover {
-  background-image: -webkit-linear-gradient(#5f8ab9, #3e648d 50%, #385a7f);
-  background-image: -o-linear-gradient(#5f8ab9, #3e648d 50%, #385a7f);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5f8ab9), color-stop(50%, #3e648d), to(#385a7f));
-  background-image: linear-gradient(#5f8ab9, #3e648d 50%, #385a7f);
+  background-image: -webkit-linear-gradient(#E4D025, #ffe600 50%, #CAB710);
+  background-image: -o-linear-gradient(#E4D025, #ffe600 50%, #CAB710);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E4D025), color-stop(50%, #FFE600), to(#CAB710));
+  background-image: linear-gradient(#E4D025, #ffe600 50%, #CAB710);
   background-repeat: no-repeat;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5f8ab9', endColorstr='#ff385a7f', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffE4D025', endColorstr='#ffcab710', GradientType=0);
   -webkit-filter: none;
           filter: none;
-  border: 1px solid #2e4b69;
+  border: 1px solid #D0BB05;
 }
 .btn-success {
   background-image: -webkit-linear-gradient(#61dd45, #3cb521 50%, #36a41e);

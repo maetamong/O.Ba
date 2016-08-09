@@ -6,8 +6,10 @@
   margin: 0 auto;
 }
 
-.form-signin .form-signin-heading,{
+.form-signin .form-signin-heading {
   margin-bottom: 10px;
+	text-align: center;
+	color: #F7790B;
 }
 
 .form-signin .form-control {
