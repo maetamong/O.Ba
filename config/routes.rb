@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 	get	'bananas/project'
   get	'bananas/photos'
 	post 'bananas/photos_complete'
+	get 'bananas/photos_donation'
+	post 'banans/photos_donation_complete'
 	get	'bananas/photos_user'
   get	'bananas/data'
   get	'bananas/points'

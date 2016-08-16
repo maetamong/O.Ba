@@ -1,12 +1,17 @@
 <%=render partial:"bananas/header" %>
 
 <div class="container">
-	<div class="well">
-		<form action="/bananas/photos_complete" method="post" enctype="multipart/form-data">
-			<p>사진 업로드: <input type="file" name="image"></p>
-			<p>기부 메시지: <input type="text" name="message" placeholder="내용을 입력하세요"></p>
-			<input type="submit" value="추가하기">
-		</form>
+	<% if !flash[:alert].nil? %>
+	<div class="alert alert-danger">
+		<%= flash[:alert] %>
+	</div>
+	<% end %>
+
+	<div class="well text-center">
+			<p><img src="/assets/banana_point_1.png" class="point">바나나 살리기 프로젝트에 기부할 수 있는 포인트가 1개 지급되었습니다.</p>
+			<p>지금 기부하시겠습니까?</p>
+			<button type="button" class="btn btn-default" name="donation" action="/bananas/photos_donation_complete" method="post">지금 기부하기</button>
+			<button type="button" class="btn btn-default" name="possession" onclick="location.href='/bananas/photos'">나중에 기부하기</button>
 	</div>
 
 	<%=render partial:"bananas/images" %>
