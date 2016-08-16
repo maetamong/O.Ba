@@ -1,9 +1,19 @@
 <%=render partial:"bananas/header" %>
 
-<% @photos.reverse.each do |photo| %>
-<div style="border: 1px solid #ffffff">
-	<img src="<%= photo.banana_photoi_url(:thumb) %>">
-	<p><%=photo.user.username %></p>
-	<p><%= photo.message %></p>
+<div class="container">
+	<% if !flash[:alert].nil? %>
+	<div class="alert alert-danger">
+		<%= flash[:alert] %>
+	</div>
+	<% end %>
+
+	<div class="well">
+		<form action="/bananas/photos_complete" method="post" enctype="multipart/form-data">
+			<p>사진 업로드: <input type="file" name="image"></p>
+			<p>기부 메시지: <input type="text" name="message" placeholder="내용을 입력하세요"></p>
+			<input type="submit" value="추가하기">
+		</form>
+	</div>
+
+	<%=render partial:"bananas/images" %>
 </div>
-<% end %>

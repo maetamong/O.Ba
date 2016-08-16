@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get	'users/logout_complete'
 	get	'bananas/project'
   get	'bananas/photos'
+	post 'bananas/photos_complete'
 	get	'bananas/photos_user'
   get	'bananas/data'
   get	'bananas/points'

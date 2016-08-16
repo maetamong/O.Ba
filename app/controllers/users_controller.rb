@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 		user.password = params[:password]
 		if user.save
 			flash[:alert]	=	"성공적으로 가입되었습니다. 감사합니다!"
-			session[:user_id] = user_id
+			session[:user_id] = user.id
 			redirect_to "/bananas/project"
 		else
 			flash[:alert] = user.errors.values.flatten.join('	')
