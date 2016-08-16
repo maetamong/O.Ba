@@ -1,4 +1,7 @@
 class BananasController < ApplicationController
+	def project
+	end
+
   def photos
 		@photos = Photo.all
   end
