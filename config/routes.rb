@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-	root	'bananas#project'
+  root 'users#signup'
+  post	'users/signup_complete'
+  get	'users/login'
+  post	'users/login_complete'
+  get	'users/logout_complete'
+	get	'bananas/project'
   get	'bananas/photos'
 	get	'bananas/photos_user'
   get	'bananas/data'

@@ -1,4 +1,7 @@
 class BananasController < ApplicationController
+	before_action	:login_check
+	skip_before_action	:login_check, only: [:project]
+
 	def project
 	end
 
