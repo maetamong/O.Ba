@@ -1,0 +1,7 @@
+<% @photos.reverse.each do |photo| %>
+<div style="border: 1px solid #ffffff">
+	<img src="<%= photo.banana_photoi_url(:thumb) %>">
+	<p><%=photo.user.username %></p>
+	<p><%= photo.message %></p>
+</div>
+<% end %>
