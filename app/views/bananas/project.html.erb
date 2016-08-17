@@ -1,1 +1,42 @@
 <%=render partial:"bananas/header" %>
+
+<div class="container">
+	<% if !flash[:alert].nil? %>
+	<div class="alert alert-danger">
+		<%= flash[:alert] %>
+	</div>
+	<% end %>
+
+	<div class="jumbotron text-center">
+	<h3> O.BA 프로젝트는 <a href="/bananas/data">Observe Banana</a> 입니다.</h3>
+	<p> 바나나에 관련된 데이터를 확인하실 수 있습니다.</p>
+	</div>
+	<br>
+	<div class="jumbotron text-center">
+	<h3> O.BA 프로젝트는 <a href="/bananas/photos">오래 먹자, 바나나</a>입니다.</h3>
+	<p> 바나나 살리기 연구 프로젝트 기부운동에 참여해보세요!</p>
+	</div>
+	<br>
+	<div class="well text-center">
+	<h3> 바나나 멸종 위기!!! </h3>
+	<h4> 맛있는 바나나, 정말 사라지나요?!</h4><br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/aOb4uvuWFfU" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<br>
+	<div class="well">
+	<h3 class="text-center"> O.BA 프로젝트에 이렇게 참여할 수 있어요:)</h3><br>
+	<div class="row">
+		<div class="col-md-6">
+			<img src="/assets/show1">
+		</div>
+		<div class="col-md-6">
+			<img src="/assets/show2" style="width: 402px"><br><br><br><br><br>
+			<h4>1. 직접 구매하신 바나나 사진을 업로드해주세요.</h4><br>
+			<h4>2. 바나나 사진이 업로드되면, 바나나 포인트가 지급됩니다.</h4><br>
+			<h4>3. 지급된 포인트를 기부해주세요!</h4>
+		</div>
+	</div>
+
+
+
+</div>
