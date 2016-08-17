@@ -1,0 +1,19 @@
+<%=render partial:"bananas/header" %>
+
+<div class="container">
+	<% if !flash[:alert].nil? %>
+	<div class="alert alert-danger">
+		<%= flash[:alert] %>
+	</div>
+	<% end %>
+
+	<div class="well">
+		<form action="/bananas/photos_complete" method="post" enctype="multipart/form-data">
+			<p>사진 업로드: <input type="file" name="image"></p>
+			<p>기부 메시지: <input type="text" name="message" placeholder=" 바나나 살리기 프로젝트를 응원해주세요." style="width:270px"></p>
+			<input type="submit" value="추가하기">
+		</form>
+	</div>
+
+	<%=render partial:"bananas/images" %>
+</div>

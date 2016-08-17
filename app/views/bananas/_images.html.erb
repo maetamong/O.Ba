@@ -1,0 +1,11 @@
+<div class="panel">
+	<div class="row panel-body">
+		<% @photos.reverse.each do |photo| %>
+		<div class="col-md-4" style="border: 1px solid #ffffff">
+			<img src="<%= photo.image_url(:thumb) %>">
+			<p><%= photo.user.username %></p>
+			<p><%= photo.message %></p>
+		</div>
+		<% end %>
+	</div>
+</div>

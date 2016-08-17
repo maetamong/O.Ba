@@ -1,0 +1,37 @@
+<div class="container">
+	<img id="profile-image" src="/assets/banana_tree_visualhunt.jpg" class="img-rounded">
+
+	<% if !flash[:alert].nil? %>
+	<div class="alert alert-danger">
+		<%= flash[:alert] %>
+	</div>
+	<% end %>
+
+<!-- signup or login -->
+	<div class="row">
+<!-- signup -->
+		<div class="col-md-6">
+ 			<form class="form-signin" action="/users/signup_complete" method="post">
+				<h2 class="form-signin-heading">O.BA 처음 오셨어요?</h2>
+        <label for="inputEmail" class="sr-only">이메일주소</label>
+        <input type="email" name="email" id="inputEmail" class="form-control" placeholder="이메일주소" required autofocus>
+        <label for="inputUsername" class="sr-only">사용자이름</label>
+        <input type="username" name="username" id="inputUsername" class="form-control" placeholder="사용자이름" required autofocus>
+       	<label for="inputPassword" class="sr-only">비밀번호</label>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="비밀번호" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">회원가입하기</button>
+      </form>
+		</div>
+<!-- login -->
+		<div class="col-md-6">
+			<form class="form-signin" action="/users/login_complete" method="post">
+				<h2 class="form-signin-heading">또 와주셔서 감사해요!</h2><br></br>
+        <label for="inputUsername" class="sr-only">사용자이름</label>
+        <input type="username" name="inputusername" id="inputUsername" class="form-control" placeholder="사용자이름" required autofocus>
+       	<label for="inputPassword" class="sr-only">비밀번호</label>
+        <input type="password" name="inputpassword" id="inputPassword" class="form-control" placeholder="비밀번호" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">로그인하기</button>
+      </form>
+		</div>
+	</div>
+</div>
