@@ -6857,26 +6857,26 @@ button.close {
   border: 1px solid #D0BB05;
 }
 .btn-success {
-  background-image: -webkit-linear-gradient(#61dd45, #3cb521 50%, #36a41e);
-  background-image: -o-linear-gradient(#61dd45, #3cb521 50%, #36a41e);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#61dd45), color-stop(50%, #3cb521), to(#36a41e));
-  background-image: linear-gradient(#61dd45, #3cb521 50%, #36a41e);
+  background-image: -webkit-linear-gradient(#ff7100, #ff811d 50%, #e1751f);
+  background-image: -o-linear-gradient(#ff7100, #ff811d 50%, #e1751f);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff7100), color-stop(50%, #ff811d), to(#e1751f));
+  background-image: linear-gradient(#ff7100, #ff811d 50%, #e1751f);
   background-repeat: no-repeat;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff61dd45', endColorstr='#ff36a41e', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff7100', endColorstr='#ffe1751f', GradientType=0);
   -webkit-filter: none;
           filter: none;
-  border: 1px solid #2e8a19;
+  border: 1px solid #e16707;
 }
 .btn-success:hover {
-  background-image: -webkit-linear-gradient(#52da34, #36a41e 50%, #31921b);
-  background-image: -o-linear-gradient(#52da34, #36a41e 50%, #31921b);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#52da34), color-stop(50%, #36a41e), to(#31921b));
-  background-image: linear-gradient(#52da34, #36a41e 50%, #31921b);
+  background-image: -webkit-linear-gradient(#E4D025, #ffe600 50%, #CAB710);
+  background-image: -o-linear-gradient(#E4D025, #ffe600 50%, #CAB710);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E4D025), color-stop(50%, #FFE600), to(#CAB710));
+  background-image: linear-gradient(#E4D025, #ffe600 50%, #CAB710);
   background-repeat: no-repeat;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff52da34', endColorstr='#ff31921b', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffE4D025', endColorstr='#ffcab710', GradientType=0);
   -webkit-filter: none;
           filter: none;
-  border: 1px solid #287916;
+  border: 1px solid #D0BB05;
 }
 .btn-info {
   background-image: -webkit-linear-gradient(#7bbdf7, #3399f3 50%, #208ff2);
