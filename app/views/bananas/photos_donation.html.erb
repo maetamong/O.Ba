@@ -8,10 +8,12 @@
 	<% end %>
 
 	<div class="well text-center">
+		<form action="/bananas/photos_donation_complete" method="post">
 			<p><img src="/assets/banana_point_1.png" class="point">바나나 살리기 프로젝트에 기부할 수 있는 포인트가 1개 지급되었습니다.</p>
 			<p>지금 기부하시겠습니까?</p>
-			<button type="button" class="btn btn-default" name="donation" action="/bananas/photos_donation_complete" method="post">지금 기부하기</button>
-			<button type="button" class="btn btn-default" name="possession" onclick="location.href='/bananas/photos'">나중에 기부하기</button>
+			<button type="submit" class="btn btn-default" name="id" value="<%= @point.id %>">지금 기부하기</button>
+			<button type="submit" class="btn btn-default" name="id" value="<%= @point.id %>">나중에 기부하기</button>
+		</form>
 	</div>
 
 	<%=render partial:"bananas/images" %>

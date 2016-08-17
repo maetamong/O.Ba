@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get	'bananas/photos'
 	post 'bananas/photos_complete'
 	get 'bananas/photos_donation'
-	post 'banans/photos_donation_complete'
+	post	'bananas/photos_donation_complete'
 	get	'bananas/photos_user'
   get	'bananas/data'
   get	'bananas/points'

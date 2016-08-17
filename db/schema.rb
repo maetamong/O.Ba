@@ -14,10 +14,10 @@ ActiveRecord::Schema.define(version: 20160816005850) do
 
   create_table "photos", force: :cascade do |t|
     t.integer  "user_id"
-    t.string   "banana_photo"
+    t.string   "image"
     t.string   "message"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "points", force: :cascade do |t|

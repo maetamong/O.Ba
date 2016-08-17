@@ -1,7 +1,12 @@
-<p><%= flash[:alert] %></p>
-
 <div class="container">
 	<img id="profile-image" src="/assets/banana_tree_visualhunt.jpg" class="img-rounded">
+
+	<% if !flash[:alert].nil? %>
+	<div class="alert alert-danger">
+		<%= flash[:alert] %>
+	</div>
+	<% end %>
+
 <!-- signup or login -->
 	<div class="row">
 <!-- signup -->
