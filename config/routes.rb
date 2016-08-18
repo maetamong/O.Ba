@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 	post	'bananas/photos_donation_complete'
 	get	'bananas/photos_user'
   get	'bananas/data'
-  get	'bananas/points'
+  get	'bananas/points/:id'=>'bananas#points'
+	post 'bananas/points_complete'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

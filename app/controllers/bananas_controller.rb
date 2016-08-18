@@ -53,6 +53,30 @@ class BananasController < ApplicationController
   end
 
   def points
+		@user=User.find(session[:user_id])
+		point=Point.where(user_id: session[:user_id])
+		pos = point.where(possession:1)
+		@pos_num = pos.count
+		don = point.where(donation:1)
+		@don_num = don.count
 	end
 
+	def points_complete
+		if params[:commit] == 'A'
+			point=Point.where(user_id: session[:user_id])
+			pos = point.where(possession:1)
+			n = pos.count
+			count = 0
+			0.upto(n-1) do |x|
+				pos[x].donation=1
+				pos[x].possession=0
+				pos[x].save
+				count += 1
+			end
+			flash[:alert] = "총 #{count}개의 포인트가 기부되었습니다. 감사합니다!"
+			redirect_to "/bananas/points/:id"
+		elsif params[:commit] == 'B'
+			redirect_to "/bananas/project"
+		end
+	end
 end

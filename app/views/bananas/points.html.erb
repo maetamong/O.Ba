@@ -1,1 +1,47 @@
 <%=render partial:"bananas/header" %>
+
+<div class="container">
+	<% if !flash[:alert].nil? %>
+	<div class="alert alert-danger">
+		<%= flash[:alert] %>
+	</div>
+	<% end %>
+
+	<div class="well">
+		<% if @pos_num == 0 %>
+			<h3 class="text-center"><%= @user.username %>님은 보유하신 포인트가 없습니다.</h3>
+		<% else %>
+			<h3 class="text-center"><%= @user.username %>님은 현재<%= @pos_num %>개의 포인트를 보유하고 있습니다.</h3>
+			<% n=1%>
+			<% while n <= @pos_num %>
+				<%= image_tag"/assets/banana_point_1.png"%>
+			<% n+=1%>
+			<% end %>
+		<% end %>
+	</div>
+	<br>
+
+	<div class="well">
+		<% if @don_num == 0 %>
+			<h3 class="text-center"><%= @user.username %>님은 기부하신 포인트가 없습니다.</h3>
+		<% else %>
+			<h3 class="text-center"><%= @user.username %>님은 현재 <%= @don_num %>개의 포인트를 기부하였습니다.</h3><br>
+			<% n=1%>
+			<% while n <= @don_num %>
+				<%= image_tag"/assets/banana_point_2.png"%>
+			<% n+=1%>
+			<% end %>
+		<% end %>
+	</div>
+	<br>
+
+  <% if @pos_num > 0%>
+	<div class="well text-center">
+		<form action="/bananas/points_complete" method="post">
+			<h3> 현재 보유한 <%= @pos_num %>개의 포인트를 모두 기부하시겠습니까? </h3>
+			<button type="submit" class="btn btn-default" name="commit" value="A">지금 기부하기</button>
+			<button type="submit" class="btn btn-default" name="commit" value="B">나중에 기부하기</button>
+		</form>
+	</div>
+	<% end %>
+<div>

@@ -4,7 +4,7 @@
  			<li class="menu-item"><a href="/bananas/photos">오래먹자 바나나</a></li>
  			<li class="menu-item"><a href="/bananas/data">바나나, 너 요즘 어때?</a></li>
 			<% if !session[:user_id].nil? %>
- 			<li class="menu-item"><a href="/bananas/points">내 바나나 밭</a></li>
+ 			<li class="menu-item"><a href="/bananas/points/<%= session[:user_id] %>">내 바나나 밭</a></li>
 			<%  end %>
  		</ul>
 		<ul class="nav navbar-nav navbar-right">
