@@ -36,16 +36,18 @@ class BananasController < ApplicationController
 	end
  
 	def photos_donation_complete
-		point = Point.find(params[:id])
-		if point.user_id == session[:user_id]
-			point.donation = 1
-			point.possession = 0
-			point.save
-			flash[:alert] = "기부해주셔서 감사합니다!"
-			redirect_to "/bananas/photos"
-		else
+		point = Point.last
+		if params[:commit]=='A'
+			if point.user_id == session[:user_id]
+				point.donation = 1
+				point.possession = 0
+				point.save
+				flash[:alert] = "기부해주셔서 감사합니다!"
+				redirect_to "/bananas/photos"
+			end
+		elsif	params[:commit]=='B' 
 		  flash[:alert] = "참여해주셔서 감사합니다!"
-			redirect_to "/bananas/photos"
+			redirect_to "/bananas/points/:id"
 		end
 	end
 
